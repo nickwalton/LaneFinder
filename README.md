@@ -6,8 +6,6 @@
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
 
 [//]: # (Image References)
 
@@ -15,17 +13,17 @@ The goals / steps of this project are the following:
 
 ---
 
-### Reflection
+### Pipeline
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline Layout
 
-*1. I converted the image to grayscale and performed gaussian smoothing on it.
-*2. I ran a canny edge detector algorithm on the image to identify the edges.
-*3. Defined the region of interest, a 4 sided polygon and masked everything else from the image 
-*4. I used a hough transformation to find the different line segments remaining in my image. 
-*5. To extrapolate these line segments into a single lane I used the np.polyfit function to perform linear
+1. I converted the image to grayscale and performed gaussian smoothing on it. \n
+2. I ran a canny edge detector algorithm on the image to identify the edges.
+3. Defined the region of interest, a 4 sided polygon and masked everything else from the image 
+4. I used a hough transformation to find the different line segments remaining in my image. 
+5. To extrapolate these line segments into a single lane I used the np.polyfit function to perform linear
   regression on the endpoints of the lines sorting them into right and left lanes based on the slope
-*6. Finally a created a weighted image to merge the extrapolated line onto the original image augmenting it witht eh 
+6. Finally a created a weighted image to merge the extrapolated line onto the original image augmenting it witht eh 
   algorithm's understanding of where the lanes are. 
 
 ### 2. Identify potential shortcomings with your current pipeline and suggest possible improvements
