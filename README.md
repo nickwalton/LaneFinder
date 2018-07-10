@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 ---
 
-![alttext] [image1]
+![alt text] [image1]
 
 ### Pipeline
 
