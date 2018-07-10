@@ -13,6 +13,8 @@ The goals / steps of this project are the following:
 
 ---
 
+![alttext] [image1]
+
 ### Pipeline
 
 ### 1. Pipeline Layout
@@ -23,7 +25,7 @@ The goals / steps of this project are the following:
 4. I used a hough transformation to find the different line segments remaining in my image. 
 5. To extrapolate these line segments into a single lane I used the np.polyfit function to perform linear
   regression on the endpoints of the lines sorting them into right and left lanes based on the slope
-6. Finally a created a weighted image to merge the extrapolated line onto the original image augmenting it witht eh 
+6. Finally I created a weighted image to merge the extrapolated line onto the original image augmenting it witht eh 
   algorithm's understanding of where the lanes are. 
 
 ### 2. Identify potential shortcomings with your current pipeline and suggest possible improvements
